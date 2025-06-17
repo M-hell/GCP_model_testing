@@ -1,0 +1,22 @@
+{
+  "name": "vertex-ai-server",
+  "version": "1.0.0",
+  "description": "Node.js server for Vertex AI model with service account authentication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "google-auth-library": "^9.0.0",
+    "@google/genai": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": ["vertex-ai", "google-cloud", "nodejs", "express"],
+  "author": "Your Name",
+  "license": "MIT"
+}
