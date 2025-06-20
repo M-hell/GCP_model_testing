@@ -3,6 +3,7 @@ const cors = require('cors');
 const path = require('path');
 const { GoogleAuth } = require('google-auth-library');
 const { GoogleGenAI } = require('@google/genai');
+require('dotenv').config()
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +14,7 @@ app.use(express.json());
 app.use(express.static('public')); // Serve static files from public directory
 
 // Set environment variable for service account key
-process.env.GOOGLE_APPLICATION_CREDENTIALS = './service-account-key.json';
+// process.env.GOOGLE_APPLICATION_CREDENTIALS = './service-account-key.json';
 
 // Initialize Vertex AI
 const ai = new GoogleGenAI({
