@@ -23,7 +23,7 @@ const ai = new GoogleGenAI({
   location: 'us-central1'
 });
 
-const model = 'projects/1090274914317/locations/us-central1/endpoints/4269180449793769472';
+const model = 'projects/1090274914317/locations/us-central1/endpoints/374534342350733312';
 
 // Generation config
 const generationConfig = {
